@@ -1,0 +1,43 @@
+@startuml
+title Defi Pool
+
+actor dev
+
+database bigQuery {
+    [transactions]
+    [token_transfers]
+}
+
+database mongo_transactions {
+    [transactions_local]
+}
+
+database mongo_common {
+    [tokens]
+    [contracts]
+    [token_price]
+}
+
+database mongo_output {
+    [pools]
+    [pools_relationship]
+}
+
+package "process" {
+  [python_process]
+}
+transactions --> transactions_local:sync
+token_transfers --> transactions_local:sync
+
+transactions_local -> python_process:in
+mongo_common -> python_process:in
+
+python_process --> pools:out
+python_process --> pools_relationship:out
+
+dev -d-> tokens:manager
+dev -d-> contracts:manager
+dev -d-> token_price:manager
+
+
+@enduml

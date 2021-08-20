@@ -1,0 +1,35 @@
+@startuml
+title: defi_up
+
+class MonitorDashboard<<dashboard>> {
+  .. fields ..
+  #task_name-
+  #database_name-
+  #table_name-
+  #rule_name- 1 2 \n 3 4
+  #field_name-
+  #desc-
+  #item_value- (null \n)
+  #result_code-
+  #stats_date-
+  #warn_status-(slack)
+  #sql-sql
+}
+
+object monitor_dashboard<<>> {
+  task_name = '5d723b92cefe4b001136320a'
+  database_name = '5e638075861e4e001f20d9ed'
+  table_name = 'token_daily_stats'
+  rule_name = 'null_field_valid'
+  field_name = 'price'
+  desc = 20
+  item_value = '1'
+  result_code = 'task_done'
+  stats_date = date(2021-08-08)
+  warn_status = 'done'
+  sql = ''
+}
+
+
+
+@enduml

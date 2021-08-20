@@ -1,0 +1,445 @@
+@startuml
+
+skinparam class {
+    BackgroundColor<<DEX transaction data>> #FFCDD2
+    BackgroundColor<<Platform basic data (static data)>> #FFCDD2
+    BackgroundColor<<Protocol statistics>> #FFCDD2
+    BackgroundColor<<Transaction pair daily statistics>> #FFCDD2
+    BackgroundColor<<Exchange token price information>> #FFCDD2
+    BackgroundColor<<DEX transaction data (latest statistics)>> #FFCDD2
+    BackgroundColor<<Daily data statistics of the exchange>> #FFCDD2
+    BackgroundColor<<Deif platform statistics>> #FFCDD2
+    BackgroundColor<<Token statistics>> #FFCDD2
+    BackgroundColor<<Loan asset statistics>> #FFCDD2
+    BackgroundColor<<Daily statistics of lending platform>> #FFCDD2
+
+    BackgroundColor<<Token>> #FFCDD2
+    'BackgroundColor<<Loan asset statistics>> Wheat
+    'BackgroundColor<<Daily statistics of lending platform>> Wheat
+}
+
+
+package Ethereum underlying data <<Folder>> {
+    class e_blocks <<Block information>>  {
+        .. fields ..
+        #timestamp-Block generation time
+        #number-Block number
+        #hash
+        #parent_hash
+        #nonce
+        #miner-Mining address
+        #difficulty-Mining difficulty in current block
+        #total_difficulty-Total difficulty until the current block
+        #size-Calculate the current block size in bytes
+        #gas_limit-Maximum gas fee allowed for the current block
+        #gas_used-Total gas fee for all transactions in the block
+        #transaction_count-Number of transactions in the block
+    }
+
+    class e_transactions <<transaction>> {
+        .. fields ..
+        #hash
+        #nonce
+        #transaction_index
+        #from_address-Transaction origination address
+        #to_address-Transaction call address
+        #value-Transaction transfer value, in Wei
+        #gas
+        #gas_price
+    }
+
+    class e_logs <<Transaction event>> {
+        .. fields ..
+        #log_index-The location of the event in the current block
+        #transaction_hash-Create transaction hash for change event
+        #transaction_index
+        #address-The source address of the current event
+        #data-Event content
+        #topics-Event topic
+    }
+
+
+    class e_contracts <<Smart contract>> {
+        .. fields ..
+        #address-Contract address
+        #is_erc20-Erc20 token
+        #is_erc721-Erc721 token
+        #block_timestamp
+        #block_number
+        #block_hash
+    }
+
+    class e_balances <<Address balance>> {
+        .. fields ..
+        #address-Address
+        #eth_balance-Platform currency balance
+    }
+
+    class e_tokens <<Ethereum token>> {
+        .. fields ..
+        #address-token address
+        #symbol-Token symbol
+        #name-Token name
+        #decimals
+        #total_supply-Total token supply
+    }
+
+    class e_token_transfers <<Token transaction>> {
+        .. fields ..
+        #token_address-Erc20 token address
+        #from_address-Transfer out address
+        #to_address-Transfer in address
+        #value-Erc20 token quantity / erc721 token ID
+        #transaction_hash-Transaction hash
+    }
+}
+
+
+package Polygon underlying data <<Folder>> {
+    class p_blocks <<Block information>>  {
+    }
+
+    class p_transactions <<transaction>> {
+    }
+
+    class p_logs <<Transaction event>> {
+    }
+
+    class p_contracts <<Smart contract>> {
+    }
+
+    class p_balances <<Address balance>> {
+    }
+
+    class p_tokens <<Polygon token>> {
+    }
+
+    class p_token_transfers <<Token transaction>> {
+    }
+}
+
+package Token data <<Folder>> {
+    class token <<Token>> {
+        coin_gecko_id-coin_geckoid
+        address-Token address
+        symbol-Marker symbol
+        total_supply-Total supply
+    }
+
+    class token_daily_stats <<Token statistics>> {
+        .. fields ..
+        address-Token address
+        symbol-Marker symbol
+        price-,24(USD)
+        day-
+        ..  ..
+        market_cap-
+        fully_diluted_valuation-
+        total_supply-
+        max_supply-
+        circulating_supply-
+        market_cap_rank-
+        24h_low_price-24
+        24h_high_price-24
+        24_hour_trading_vol-24
+
+        .. v2 ..
+        total_value_locked-
+        fdv_to_tvl_ratio-
+        mcap_to_tvl_ratio-/
+        twitter_followers-twitter
+        facebook_likes-facebook
+        reddit_average_posts_48h-48
+        reddit_average_comments_48h-48
+        reddit_subscribers-
+        reddit_accounts_active_48h-
+        telegram_channel_user_count-telegram
+
+        holders-()
+        trader_count-
+        trading_volume-(USD)
+    }
+
+}
+
+package  <<Folder>> {
+    class tag <<>> {
+        .. fields ..
+        #name-
+        #op_id-
+        #created_at-
+    }
+
+    class entity_name_space <<>> {
+        .. fields ..
+        #name-(unique index)
+    }
+
+    class entity_tag <<>> {
+        .. fields ..
+        #entity_ns_name-
+        #tag_name-
+        #entity_id-Id  defi_protocol_info slug
+        #op_id-()
+        #created_at-
+    }
+
+    class archive_entity_tag << >> {
+        .. fields ..
+        #entity_ns_name-
+        #tag_name-
+        #entity_id-Id
+        #op_id-()
+        #created_at-
+    }
+}
+
+
+package DeFi <<Folder>> {
+    class defi_protocol_info <<()>> {
+        .. fields ..
+        protocol_Id-ID
+        chain-
+        slug-
+        name-
+        token-
+        category-DeFi
+        symbol-
+        url-dapp
+        description-
+        twitter-
+        logo-logo
+        coin_gecko_id-coinGeckoid
+        cmcId-coinMarketCapID
+        launched_time-
+    }
+
+    class defi_daily_stats <<deif>> {
+        .. fields ..
+        protocol_Id-ID
+        chain-
+        name-
+        tvl-
+        day-
+        slug-
+        .. v2 ..
+        volume-
+        trader_count-
+        trade_count-
+        gas-(wei)
+        gas_price-(USD)
+        active_address_count-()
+    }
+
+
+
+    package DEX <<Folder>> {
+
+        class ethereum_uniswap <<-UniSwap>> {
+            .. fields ..
+            event_swap-
+            event_increase_liquidity-
+            event_decrease_liquidity-
+        }
+
+        class bsc_pancakeswap <<BSC-PancakeSwap>> {
+            .. fields ..
+            event_swap-
+            event_increase_liquidity-
+            event_decrease_liquidity-
+        }
+
+        class polygon_sushiswap <<Polygon-SushiSwap>> {
+            .. fields ..
+            event_swap-
+            event_increase_liquidity-
+            event_decrease_liquidity-
+        }
+
+        class dex_pair_daily_stats <<>> {
+            .. fields ..
+            protocol_id-DEXID
+            name-
+            chain-
+            volume-(USD)
+            liquidity-
+            token_0-tokenA
+            token_1-tokenB
+            rol-()
+            day-
+            total_fee-(USD)
+            trader_count-(swap,)
+            trade_count-
+            .. v2 ..
+            add_liquidity_trader_count-
+            add_liquidity_amount-(USD)
+            remove_liquidity_trader_count-
+            remove_liquidity_amount-(USD)
+        }
+        class dex_daily_stats <<>> {
+            ... fields ...
+            protocol_id-ID
+            name-
+            chain-
+            volume-
+            tvl-
+            total_fee-
+            trader_count-(swap,)
+            token_count-
+            pairs_count-
+            day-
+            .. v2 ..
+            add_liquidity_amount-
+            active_address_count-()
+            add_liquidity_trader_count-
+            remove_liquidity_trader_count-
+        }
+    }
+
+    package Lending <<Folder>> {
+        class ethereum_aave <<-aave>> {
+            .. fields ..
+            event_repay-
+            event_withdraw-
+            event_deposit-
+        }
+
+        class lending_assets_daily_stats <<>> {
+            .. fields ..
+            protocol_id-DEXID
+            slug-
+            chain-
+            asset-
+            ..  ..
+            deposit_amount-
+            borrow_amount-
+            withdraw_amount-
+            repay_amount-
+            liquidation_amount-
+            ..  ..
+            deposit_count-
+            borrow_count-
+            withdraw_count-
+            repay_count-
+            liquidation_count-
+            ..  ..
+            flash_loan_amount-
+            .. v2.0 ..
+            supply_apy-
+            borrow_apy-
+            available_supply-
+            accrue_interest-
+            liquidations-
+            total_flash_loans-
+            flash_depositors_fee-
+            flash_protocol_fee-(gas fee)
+            errors-/
+        }
+
+        class lending_daily_stats <<>> {
+            .. fields ..
+            protocol_id-DEXID
+            slug-
+            chain-
+            ..  ..
+            deposit_amount-
+            borrow_amount-
+            withdraw_amount-
+            repay_amount-
+            liquidation_amount-
+            ..  ..
+            deposit_count-
+            borrow_count-
+            withdraw_count-
+            repay_count-
+            liquidation_count-
+            ..  ..
+            flash_loan_amount-
+            .. v2.0 ..
+            errors-/
+            total_flash_loans-
+            flash_depositors_fee-
+            flash_protocol_fee-(gas fee)
+            accrue_interest-
+            liquidations-
+        }
+
+    }
+
+    package Yield <<Folder>> {
+        class ethereum_yearn <<-yearn>> {
+            .. fields ..
+            event_staked-
+            event_withdraw-
+        }
+        class yield_assets_daily_stats <<>> {
+            .. fields ..
+            token-
+            accrue_interest-
+            supply_apy-
+            total_deposit-
+            total_withdraw-
+            trader_count-
+            trade_count-
+            rol-
+        }
+    }
+}
+
+class apy_daily {
+    .. fields ..
+    protocol_id-ID
+    protocol_slug-
+    chain-
+    asset-
+    asset_address-
+    day-
+    apy-
+}
+
+'
+e_blocks "1" *-- "n"  e_transactions :
+e_transactions "1" ..|> "n"   e_logs: has
+e_transactions --|>  e_token_transfers:
+e_tokens <|..  e_contracts
+e_transactions "n" --o "1" e_balances: calculate
+
+p_blocks "1" *-- "n"  p_transactions :
+p_transactions "1" ..|> "n"   p_logs: has
+p_transactions --|>  p_token_transfers:
+p_tokens <|..  p_contracts
+p_transactions "n" --o "1" p_balances: calculate
+
+'token
+token "1"--"n" token_daily_stats:
+
+'
+tag "1"--"n" entity_tag
+entity_tag "n"--"1" entity_name_space
+archive_entity_tag .. entity_tag
+
+'DEX data
+defi_protocol_info  "1" ..|> "n" dex_daily_stats: has
+defi_protocol_info  "1" ..|> "n" defi_daily_stats: has
+defi_protocol_info  "1" ..|> "n" token_daily_stats: has
+bsc_pancakeswap "n" --o "1" dex_pair_daily_stats: calculate
+ethereum_uniswap "n" --o "1" dex_pair_daily_stats
+polygon_sushiswap "n" --o "1" dex_pair_daily_stats
+dex_pair_daily_stats "n" --o "1" dex_daily_stats: calculate
+dex_daily_stats "1" --o "1" token_daily_stats: has
+e_logs "1" --o "1" ethereum_uniswap: ETL
+p_logs "1" --o "1" polygon_sushiswap: ETL
+
+'Lending data
+e_logs "1" --o "1" ethereum_aave: ETL
+defi_protocol_info  "1" ..|> "n" lending_daily_stats: has
+ethereum_aave "n" --o "1" lending_assets_daily_stats: calculate
+lending_assets_daily_stats "n" --o "1" lending_daily_stats: calculate
+lending_daily_stats "1" --o "1" token_daily_stats: has
+
+'Yield data
+e_logs "1" --o "1" ethereum_yearn: ETL
+defi_protocol_info  "1" ..|> "n" yield_assets_daily_stats: has
+ethereum_yearn "n" --o "1" yield_assets_daily_stats: calculate
+yield_assets_daily_stats "1" --o "n" token_daily_stats: use
+@enduml

@@ -1,0 +1,54 @@
+@startuml
+
+node ETH
+node Polygon
+node BSC #Yellow
+node Infura
+
+database "BigQuery Public" as bp {
+  [crypto_ethereum]
+  [crypto_polygon]
+  [crypto_bsc] #Yellow
+  [crypto_other]
+}
+
+database "BigQuery BlockChain ETL" as bbe {
+  [ethereum_sushi]
+  [ethereum_compound]
+  [polygon_sushi]
+  [polygon_quickswap] #Yellow
+}
+
+database "UP" as up #Yellow {
+  [dex]
+  [lend]
+}
+
+[Google Storage]
+
+cloud "AirFlow x N" as af{
+  [Google Composer]
+  note bottom of [Google Composer]  :run all job
+}
+
+[ETH] --> [Infura]:proxy
+[Polygon] --> [Infura]:proxy
+[BSC] ..> [Infura]:
+[Infura] --> [Google Storage]:pull csv data by python
+
+
+[Google Storage] --> [crypto_ethereum]:upload
+[Google Storage] --> [crypto_polygon]:upload
+'bp --> bbe: aggregation
+[crypto_ethereum] --> [ethereum_sushi]: aggregation by sql
+[crypto_ethereum] --> [ethereum_compound]: gen table definition\n by tools
+[crypto_polygon] --> [polygon_sushi]: exec sql
+[crypto_polygon] --> [polygon_quickswap]: aggregation
+
+[ethereum_sushi] --> [dex]:\n
+[polygon_sushi] --> [dex]
+[polygon_quickswap] --> [dex]
+
+[ethereum_compound] --> [lend]
+
+@enduml

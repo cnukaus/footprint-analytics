@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "sushiswap",
+    "coin_gecko_id": "sushi",
+    "name": "SushiSwap",
+    "symbol": "SUSHI",
+    "chain": "Binance",
+    "chain_id": "56",
+    "covalent_name": "sushiswap",
+    "protocol_id": 293
+  },
+  {
+    "slug": "sushiswap",
+    "coin_gecko_id": "sushi",
+    "name": "SushiSwap",
+    "symbol": "SUSHI",
+    "chain": "Polygon",
+    "chain_id": "137",
+    "covalent_name": "sushiswap",
+    "protocol_id": 291
+  },
+  {
+    "slug": "sushiswap",
+    "coin_gecko_id": "sushi",
+    "name": "SushiSwap",
+    "symbol": "SUSHI",
+    "chain": "Ethereum",
+    "chain_id": "1",
+    "covalent_name": "sushiswap",
+    "protocol_id": 16
+  },
+  {
+    "slug": "uniswap-v2",
+    "coin_gecko_id": "uniswap",
+    "name": "Uniswap v2",
+    "symbol": "UNI",
+    "chain": "Ethereum",
+    "chain_id": "1",
+    "covalent_name": "uniswap_v2",
+    "protocol_id": 1
+  }
+]

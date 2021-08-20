@@ -1,0 +1,36 @@
+@startuml
+title footprint
+
+actor 2B_User
+
+frame footprintServer {
+  frame Kubernetes {
+    node ingress
+    node metabasePods...
+    database metabaseMySQL
+  }
+  node nodeServer
+  database nodeMongodb
+}
+
+frame googleCloud {
+  database bigQuery
+}
+
+' 2b user
+2B_User --> ingress:
+
+'node server
+ingress --> nodeServer: login/payment
+nodeServer <--> nodeMongodb
+nodeServer --> metabasePods... : restful API
+
+'big query
+ingress <--> metabasePods...
+metabasePods... <--> metabaseMySQL: read/write
+
+metabasePods... --> bigQuery: cached from
+
+
+
+@enduml

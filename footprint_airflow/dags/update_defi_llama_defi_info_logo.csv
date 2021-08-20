@@ -1,0 +1,37 @@
+chain,slug,name,cmc_id,coin_gecko_id,symbol,url,logo
+Ethereum,dhedge,dHEDGE,7094,dhedge-dao,DHT,https://www.dhedge.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/7094.png
+Ethereum,uniswap,Uniswap,7083,uniswap,UNI,https://info.uniswap.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/7083.png
+Ethereum,curve,Curve,6538,curve-dao-token,CRV,https://curve.fi,https://s2.coinmarketcap.com/static/img/coins/64x64/6538.png
+Polygon,curve,Curve,6538,curve-dao-token,CRV,https://curve.fi,https://s2.coinmarketcap.com/static/img/coins/64x64/6538.png
+Fantom,curve,Curve,6538,curve-dao-token,CRV,https://curve.fi,https://s2.coinmarketcap.com/static/img/coins/64x64/6538.png
+Ethereum,balancer,Balancer,5728,balancer,BAL,https://balancer.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/5728.png
+Ethereum,loopring,Loopring,1934,loopring,LRC,https://loopring.org/#/,https://s2.coinmarketcap.com/static/img/coins/64x64/1934.png
+Ethereum,kyber,Kyber,404,kyber-network,KNC,https://kyber.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/1982.png
+Ethereum,swerve,Swerve,6901,swerve-dao,SWRV,https://swerve.fi/,https://s2.coinmarketcap.com/static/img/coins/64x64/6901.png
+Ethereum,keep-network,KEEP Network,5566,keep-network,KEEP,https://tbtc.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/5566.png
+Ethereum,imtoken,imToken,5292,imbtc,imBTC,https://token.im/,https://s2.coinmarketcap.com/static/img/coins/64x64/5292.png
+Ethereum,hbtc,hBTC,478,huobi-btc,hBTC,https://www.hbtc.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6941.png
+Ethereum,xdai-stake,xDAI Stake,5601,xdai-stake,STAKE,https://xdaichain.com/,https://s2.coinmarketcap.com/static/img/coins/64x64/5601.png
+Binance,xdai-stake,xDAI Stake,5601,xdai-stake,STAKE,https://xdaichain.com/,https://s2.coinmarketcap.com/static/img/coins/64x64/5601.png
+xDai,curve,Curve,6538,curve-dao-token,CRV,https://curve.fi,https://s2.coinmarketcap.com/static/img/coins/64x64/6538.png
+Polygon,balancer,Balancer,5728,balancer,BAL,https://balancer.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/5728.png
+Polygon,kyber,Kyber,404,kyber-network,KNC,https://kyber.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/1982.png
+Ethereum,harvest-finance,Harvest Finance,6859,harvest-finance,FARM,https://harvest.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6859.png
+Ethereum,barnbridge,BarnBridge,7440,barnbridge,BOND,https://barnbridge.com/,https://s2.coinmarketcap.com/static/img/coins/64x64/7440.png
+Ethereum,hakka-finance,Hakka Finance,6622,hakka-finance,HAKKA,https://hakka.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/1982.png
+Ethereum,aave,AAVE,7278,aave,AAVE,https://aave.com,https://s2.coinmarketcap.com/static/img/coins/64x64/7278.png
+Polygon,aave,AAVE,7278,aave,AAVE,https://aave.com,https://s2.coinmarketcap.com/static/img/coins/64x64/7278.png
+Ethereum,compound,Compound,5692,compound-governance-token,COMP,https://compound.finance,https://s2.coinmarketcap.com/static/img/coins/64x64/5692.png
+Ethereum,cream-finance,CREAM Finance,6193,cream-2,CREAM,https://cream.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6193.png
+Binance,cream-finance,CREAM Finance,6193,cream-2,CREAM,https://cream.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6193.png
+Fantom,cream-finance,CREAM Finance,6193,cream-2,CREAM,https://cream.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6193.png
+Ethereum,dforce,dForce,4758,dforce-token,DF,https://dforce.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/4758.png
+Binance,dforce,dForce,4758,dforce-token,DF,https://dforce.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/4758.png
+Ethereum,bzx,bZx,5810,bzx-protocol,BZRX,https://bzx.network/,https://s2.coinmarketcap.com/static/img/coins/64x64/5810.png
+Polygon,cream-finance,CREAM Finance,6193,cream-2,CREAM,https://cream.finance/,https://s2.coinmarketcap.com/static/img/coins/64x64/6193.png
+Ethereum,mstable,mStable,5748,meta,MTA,https://mstable.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/5748.png
+Polygon,mstable,mStable,5748,meta,MTA,https://mstable.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/5748.png
+Ethereum,uma-protocol,UMA Protocol,5617,uma,UMA,https://umaproject.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/5617.png
+Ethereum,nexus-mutual,Nexus Mutual,1103,nexus,NXM,https://nexusmutual.io/,https://s2.coinmarketcap.com/static/img/coins/64x64/5830.png
+Ethereum,uniswap-v3,Uniswap v3,,,UNI,https://uniswap.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/7083.png
+Optimism,uniswap-v3,Uniswap v3,,,UNI,https://uniswap.org/,https://s2.coinmarketcap.com/static/img/coins/64x64/7083.png

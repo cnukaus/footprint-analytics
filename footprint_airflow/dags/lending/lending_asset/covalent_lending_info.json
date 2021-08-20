@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "aave",
+    "coin_gecko_id": "aave",
+    "name": "AAVE",
+    "symbol": "AAVE",
+    "chain": "Ethereum",
+    "chain_id": "1",
+    "covalent_name": "aave_v2",
+    "protocol_id": 6,
+    "version": 2
+  },
+  {
+    "slug": "aave",
+    "coin_gecko_id": "aave",
+    "name": "AAVE",
+    "symbol": "AAVE",
+    "chain": "Polygon",
+    "chain_id": "137",
+    "covalent_name": "aave_v2",
+    "protocol_id": 7,
+    "version": 2
+  },
+    {
+    "slug": "compound",
+    "coin_gecko_id": "compound-governance-token",
+    "name": "Compound",
+    "symbol": "COMP",
+    "chain": "Ethereum",
+    "chain_id": "1",
+    "covalent_name": "compound",
+    "protocol_id": 10,
+    "version": 2
+  }
+]

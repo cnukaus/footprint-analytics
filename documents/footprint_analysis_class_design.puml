@@ -1,0 +1,17 @@
+@startuml
+title Defi Pool Data parsing class structure
+
+class CommonPool {
+    .. fields ..
+    deposit()
+    withdraw()
+    earn()
+}
+
+CommonPool <|-- LendingPool
+CommonPool <|-- DexPool
+
+DexPool <|-- UniSwapPool
+DexPool <|-- SushiSwapPool
+
+@enduml

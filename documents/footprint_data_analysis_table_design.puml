@@ -1,0 +1,72 @@
+@startuml
+title Defi Pool
+
+package transactions {
+    entity transactions_local {
+        .. fields ..
+        transaction_hash
+        block_timestamp
+        tx_from_address-
+        interacted_contract-
+        from_address-
+        to_address-
+        value-
+        token_address-
+    }
+}
+
+package common {
+    entity tokens {
+        .. fields ..
+        address--token
+        decimal--
+    }
+
+    entity contracts {
+        .. fields ..
+        address--contracts
+        platform--
+        process--
+        others
+    }
+
+    entity token_price {
+        .. fields ..
+        address--token
+        time
+        price
+    }
+}
+
+package out {
+    entity transactions {
+        .. fields ..
+        transaction_hash
+        block_timestamp
+        tx_from_address-
+        interacted_contract-
+        from_address-
+        to_address--
+        value--
+        token_address--
+        method--//
+    }
+
+    entity pools {
+        .. fields ..
+        tvl
+        deposit
+        withdraw
+        earn--
+        true_apy
+    }
+
+    entity pools_relationship {
+        .. fields ..
+        address--contracts
+        up--contracts
+        balance--contracts
+    }
+}
+
+@enduml

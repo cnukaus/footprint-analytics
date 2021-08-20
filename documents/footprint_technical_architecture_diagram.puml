@@ -1,0 +1,25 @@
+@startuml dremio
+
+node infura
+node ethereumNode
+node BigQuery
+node webSite
+database csvFile
+database metabase
+actor User
+
+queue ethereumETL
+queue Airflow
+
+infura <-- ethereumETL : sync form
+ethereumNode <-- ethereumETL : sync form
+ethereumETL --> csvFile: export
+Airflow --> csvFile: load data
+Airflow --> BigQuery: export data
+metabase --> BigQuery: cached from
+
+
+User --> webSite: visit
+webSite --> metabase: connect
+
+@enduml

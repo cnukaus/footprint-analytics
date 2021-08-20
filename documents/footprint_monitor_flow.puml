@@ -1,0 +1,22 @@
+@startuml
+title:
+
+node start
+node scrapy
+node upload
+node valid
+node fix
+node end
+
+
+[start] --> [start]:
+[start] --> [scrapy]:
+[scrapy] --> [upload]:
+[upload] --> [valid]:
+[valid] --> [valid]:
+[valid] --> [fix]: \n\n
+[valid] --> [end]:
+[end] --> [end]:
+
+
+@enduml

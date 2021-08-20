@@ -1,0 +1,21 @@
+# Business Package
+pycoingecko
+apache-airflow[gcp]==1.10.3
+google-cloud-bigquery
+
+# util
+moment~=0.12.1
+pydash~=4.9
+pytz
+pandas
+joblib
+tqdm
+retrying
+beautifulsoup4==4.9.3
+
+# DB Package
+pymongo~=3.11
+redis~=3.5
+
+
+

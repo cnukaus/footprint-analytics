@@ -1,0 +1,112 @@
+name,protocol,new name,protocol_id
+1inch Liquidity Protocol,One Inch Liquidity Pool,1inch,95
+1inch Liquidity Protocol,One Inch Liquidity Pool,1inch,95
+1inch,Zerox Exchange v2,1inch v2,95
+1inch,Zerox Exchange v3,1inch v3,95
+AfroDex,EtherDelta,AfroDex,401
+Air Swap,AirSwap Exchange,AirSwap v1,402
+AirSwap,AirSwap v2,AirSwap v2,403
+Amplbitcratic,EtherDelta,Amplbitcratic,404
+Anyswap,Uniswap,Anyswap,350
+ApeSwap,Uniswap v2,ApeSwap,334
+BakerySwap,Uniswap v2,BakerySwap,346
+Balancer,Balancer Pool Token,Balancer,12
+Bamboo Relay,Zerox Exchange,Bamboo Relay,405
+Bamboo Relay,Zerox Exchange v2,Bamboo Relay v2,406
+Bamboo Relay,Zerox Exchange v3,Bamboo Relay v3,407
+Bancor Network,Bancor Network,Bancor Network,408
+Bancor Network,Bancor Network v2,Bancor Network v2,409
+BestSwap,Uniswap v2,BestSwap,410
+Bitox,EtherDelta,Bitox,411
+BSCSwap,Uniswap v2,BSCSwap,349
+CellSwap,Uniswap v2,CellSwap,412
+Cellswap,Uniswap v2,Cellswap v2,413
+Cofix,Cofix,Cofix,55
+Coinchangex,EtherDelta,Coinchangex,414
+CoinSwap,Uniswap v2,CoinSwap,415
+Cream Pool Token,Balancer Pool Token,Cream Pool Token,416
+CRO DeFi Swap,Uniswap v2,CRO DeFi Swap,417
+Curve,Curve,Curve,3
+DDEX,Zerox Exchange,DDEX,128
+DDEX,Zerox Exchange v2,DDEX v2,128
+DecentrEx,EtherDelta,DecentrEx,418
+DeversiFi,Zerox Exchange v2,DeversiFi,53
+dex.blue,dex.blue,dex.blue,419
+Dodo,Dodo,Dodo,48
+DUBIex,DUBIex,DUBIex,420
+dYdX,dYdX2,dYdX,46
+ERC dEX,Zerox Exchange,ERC dEX,421
+ERC dEX,Zerox Exchange v2,ERC dEX v2,422
+EtherBlockchain,Zerox Exchange v2,EtherBlockchain,423
+EtherBlockchain,Zerox Exchange v3,EtherBlockchain v2,424
+ETHERCExchange,ETHERCExchange,ETHERCExchange,425
+EtherDelta,EtherDelta,EtherDelta,426
+Ethernext,EtherDelta,Ethernext,427
+Ethfinex,Ethfinex,Ethfinex,428
+Ethfinex,Zerox Exchange v2,Ethfinex v2,429
+FFFSwap,Uniswap v2,FFFSwap,430
+Fordex,Zerox Exchange v2,Fordex,431
+GUDecks,Zerox Exchange v2,GUDecks,432
+GUDeks,Zerox Exchange v2,GUDeks,433
+HiSwap,Uniswap v2,HiSwap,434
+Holaswap,Uniswap v3,Holaswap,435
+Hydro Hybrid Exchange,DDEX Hydro v1.0,Hydro Hybrid Exchange,436
+Hydro Hybrid Exchange,DDEX Hydro v1.1,Hydro Hybrid Exchange v2,437
+Hydro Hybrid Exchange,Zerox Exchange v2,Hydro Hybrid Exchange v3,438
+IDEX,IDEX,IDEX,139
+IDEX,IDEX v2,IDEX v2,139
+IDEX,Zerox Exchange v2,IDEX v3,139
+Kyber Network,Kyber Network,Kyber Network,439
+Kyber Network,Kyber Network v2,Kyber Network v2,440
+Kyber Network,Kyber Network v3,Kyber Network v3,441
+Kyber Network,Kyber Network v4,Kyber Network v4,442
+LedgerDex,Zerox Exchange,LedgerDex,443
+LedgerDex,Zerox Exchange v2,LedgerDex v2,444
+LedgerDex,Zerox Exchange v3,LedgerDex v3,445
+Matcha,Zerox Exchange v2,Matcha,446
+Matcha,Zerox Exchange v3,Matcha v2,447
+Mdex,Uniswap v2,Mdex,254
+Miniswap,Uniswap v2,Miniswap,448
+Mochi,Uniswap v2,Mochi,449
+Mooniswap,Mooniswap,Mooniswap,450
+Oasis,Matching Market,Oasis,451
+OpenRelay,Zerox Exchange,OpenRelay,452
+OpenRelay,Zerox Exchange v2,OpenRelay v2,453
+Pancake,Uniswap v2,PancakeSwap,100
+Pancake v2,Uniswap v2,PancakeSwap,100
+Radar Relay,Zerox Exchange,Radar Relay,456
+Radar Relay,Zerox Exchange v2,Radar Relay v2,457
+Radar Relay,Zerox Exchange v3,Radar Relay v3,458
+S.Finance,Curve,S.Finance,459
+SakeSwap,Uniswap v2,SakeSwap,460
+SeedDex,Token.Store,SeedDex,461
+Shark Relay,Zerox Exchange,Shark Relay,462
+SingularX,EtherDelta,SingularX,463
+StarBitEx,Zerox Exchange,StarBitEx,464
+StarBitEx,Zerox Exchange v2,StarBitEx v2,465
+StreetSwap,Uniswap v2,StreetSwap,466
+SushiSwap,Uniswap v2,SushiSwap,16
+SwapLiquidity,Uniswap v2,SwapLiquidity,467
+SwapX,Uniswap v2,SwapX,468
+SwitchDex,EtherDelta,SwitchDex,469
+SwitchDex,Zerox Exchange v3,SwitchDex v2,470
+TacoSwap,Uniswap v2,TacoSwap,471
+The Ocean,Zerox Exchange,The Ocean,472
+The Ocean,Zerox Exchange v2,The Ocean v2,473
+TokenJar,Zerox Exchange,TokenJar,474
+TokenJar,Zerox Exchange v2,TokenJar v2,475
+Tokenlon,Zerox Exchange,Tokenlon,344
+Tokenlon,Zerox Exchange v2,Tokenlon v2,344
+Tokenlon,Zerox Exchange v3,Tokenlon v3,344
+TokenStore,Token.Store,TokenStore,476
+TokenTrove,Zerox Exchange v2,TokenTrove,477
+TokenTrove,Zerox Exchange v3,TokenTrove v2,478
+TradexOne,EtherDelta,TradexOne,479
+Uniswap,Uniswap,Uniswap,400
+Uniswap,Uniswap v2,Uniswap v2,1
+Uniswap,Uniswap v3,Uniswap v3,217
+Uranium,Uniswap v2,Uranium,480
+Zerox Exchange,Zerox Exchange,Zerox Exchange,481
+Zerox Exchange,Zerox Exchange v2,Zerox Exchange v2,482
+Zerox Exchange,Zerox Exchange v3,Zerox Exchange v3,483
+ZeusSwap,Uniswap v2,ZeusSwap,484

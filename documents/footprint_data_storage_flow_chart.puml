@@ -1,0 +1,61 @@
+@startuml
+title footprint
+
+note as N1
+  <b>1.AirFlow
+end note
+
+actor 2C_User
+actor 2B_User
+
+frame nodeServer {
+  node tofuNodeServer
+  node tagNodeServer
+}
+
+frame footprintServer {
+  node metabaseServer
+}
+
+frame mongo {
+  database tagsDB
+  database tofuDB
+}
+
+frame googleCloud {
+  database bigQuery {
+    database footprint
+    database crypto_ethereum
+    database crypto_bsc
+  }
+  database cloudStorage
+  queue spark
+  database analyticsMongoDB
+}
+
+
+cloudStorage --> footprint #line:blue;line.bold :
+tagsDB <--> cloudStorage #line:blue;line.bold : 1.ETL\n 2.
+tofuDB <--> cloudStorage #line:blue;line.bold
+
+' BigQuery
+tofuNodeServer <--> tofuDB: read/write
+tagNodeServer <--> tagsDB: read/write
+
+' 2c user
+2C_User --> tofuNodeServer: submit protocol
+2C_User --> tagNodeServer: submit tag
+2C_User <-left- metabaseServer: share dashboard to
+
+' 2b user
+2B_User --> metabaseServer: data analytics
+metabaseServer --> footprint: cached from
+
+' model analytics
+spark <-- footprint: load
+spark <-- crypto_ethereum: load
+spark <-- crypto_bsc
+spark <-right-> analyticsMongoDB:
+analyticsMongoDB -left-> cloudStorage #line:blue;line.bold :
+
+@enduml
